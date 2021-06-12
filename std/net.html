@@ -1,0 +1,2282 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>網絡模塊:W迴音 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../action/preface.html" />
+    
+    
+    <link rel="prev" href="fs-and-path.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../1st-glance/">
+            
+                <a href="../1st-glance/">
+            
+                    
+                        <b>1.2.</b>
+                    
+                    初識Rust
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../install/preface.html">
+            
+                <a href="../install/preface.html">
+            
+                    
+                        <b>1.3.</b>
+                    
+                    安裝Rust
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../install/install_rust_on_linux.html">
+            
+                <a href="../install/install_rust_on_linux.html">
+            
+                    
+                        <b>1.3.1.</b>
+                    
+                    Linux
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../install/install_rust_on_mac_os.html">
+            
+                <a href="../install/install_rust_on_mac_os.html">
+            
+                    
+                        <b>1.3.2.</b>
+                    
+                    Mac
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../install/install_rust_on_windows.html">
+            
+                <a href="../install/install_rust_on_windows.html">
+            
+                    
+                        <b>1.3.3.</b>
+                    
+                    Windows
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../install/rustup.html">
+            
+                <a href="../install/rustup.html">
+            
+                    
+                        <b>1.3.4.</b>
+                    
+                    版本管理工具: rustup
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../editors/preface.html">
+            
+                <a href="../editors/preface.html">
+            
+                    
+                        <b>1.4.</b>
+                    
+                    編輯器
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../editors/before.html">
+            
+                <a href="../editors/before.html">
+            
+                    
+                        <b>1.4.1.</b>
+                    
+                    前期準備
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../editors/vim.html">
+            
+                <a href="../editors/vim.html">
+            
+                    
+                        <b>1.4.2.</b>
+                    
+                    vim
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../editors/emacs.html">
+            
+                <a href="../editors/emacs.html">
+            
+                    
+                        <b>1.4.3.</b>
+                    
+                    emacs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../editors/vscode.html">
+            
+                <a href="../editors/vscode.html">
+            
+                    
+                        <b>1.4.4.</b>
+                    
+                    vscode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../editors/atom.html">
+            
+                <a href="../editors/atom.html">
+            
+                    
+                        <b>1.4.5.</b>
+                    
+                    atom
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../editors/sublime.html">
+            
+                <a href="../editors/sublime.html">
+            
+                    
+                        <b>1.4.6.</b>
+                    
+                    sublime
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../editors/visualstudio.html">
+            
+                <a href="../editors/visualstudio.html">
+            
+                    
+                        <b>1.4.7.</b>
+                    
+                    visual studio
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="../editors/spacemacs.html">
+            
+                <a href="../editors/spacemacs.html">
+            
+                    
+                        <b>1.4.8.</b>
+                    
+                    spacemacs
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../quickstart/quickstart.html">
+            
+                <a href="../quickstart/quickstart.html">
+            
+                    
+                        <b>1.5.</b>
+                    
+                    Rust快速入門
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../quickstart/rust-travel.html">
+            
+                <a href="../quickstart/rust-travel.html">
+            
+                    
+                        <b>1.5.1.</b>
+                    
+                    Rust旅程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../quickstart/primitive-type.html">
+            
+                <a href="../quickstart/primitive-type.html">
+            
+                    
+                        <b>1.5.2.</b>
+                    
+                    變量綁定與原生類型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../quickstart/vector-string.html">
+            
+                <a href="../quickstart/vector-string.html">
+            
+                    
+                        <b>1.5.3.</b>
+                    
+                    數組、動態數組和字符串
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../quickstart/struct-enum.html">
+            
+                <a href="../quickstart/struct-enum.html">
+            
+                    
+                        <b>1.5.4.</b>
+                    
+                    結構體與枚舉
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../quickstart/control-flow.html">
+            
+                <a href="../quickstart/control-flow.html">
+            
+                    
+                        <b>1.5.5.</b>
+                    
+                    控制流
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../quickstart/function-method.html">
+            
+                <a href="../quickstart/function-method.html">
+            
+                    
+                        <b>1.5.6.</b>
+                    
+                    函數與方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../quickstart/trait.html">
+            
+                <a href="../quickstart/trait.html">
+            
+                    
+                        <b>1.5.7.</b>
+                    
+                    特性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="../quickstart/comments-document.html">
+            
+                <a href="../quickstart/comments-document.html">
+            
+                    
+                        <b>1.5.8.</b>
+                    
+                    註釋與文檔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="../quickstart/io-stream.html">
+            
+                <a href="../quickstart/io-stream.html">
+            
+                    
+                        <b>1.5.9.</b>
+                    
+                    輸入輸出流
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../cargo-projects-manager/cargo-projects-manager.html">
+            
+                <a href="../cargo-projects-manager/cargo-projects-manager.html">
+            
+                    
+                        <b>1.6.</b>
+                    
+                    Cargo項目管理器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../flow/preface.html">
+            
+                <a href="../flow/preface.html">
+            
+                    
+                        <b>1.7.</b>
+                    
+                    基本程序結構
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../flow/comment.html">
+            
+                <a href="../flow/comment.html">
+            
+                    
+                        <b>1.7.1.</b>
+                    
+                    註釋
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../flow/condition.html">
+            
+                <a href="../flow/condition.html">
+            
+                    
+                        <b>1.7.2.</b>
+                    
+                    條件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../flow/repetition.html">
+            
+                <a href="../flow/repetition.html">
+            
+                    
+                        <b>1.7.3.</b>
+                    
+                    循環
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../type/preface.html">
+            
+                <a href="../type/preface.html">
+            
+                    
+                        <b>1.8.</b>
+                    
+                    類型、運算符和字符串
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../type/types.html">
+            
+                <a href="../type/types.html">
+            
+                    
+                        <b>1.8.1.</b>
+                    
+                    基礎類型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../type/compound-types.html">
+            
+                <a href="../type/compound-types.html">
+            
+                    
+                        <b>1.8.2.</b>
+                    
+                    複合類型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../type/string.html">
+            
+                <a href="../type/string.html">
+            
+                    
+                        <b>1.8.3.</b>
+                    
+                    字符串類
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../type/operator-and-formatting.html">
+            
+                <a href="../type/operator-and-formatting.html">
+            
+                    
+                        <b>1.8.4.</b>
+                    
+                    基礎運算符和字符串格式化
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../function/overview.html">
+            
+                <a href="../function/overview.html">
+            
+                    
+                        <b>1.9.</b>
+                    
+                    函數
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../function/arguement.html">
+            
+                <a href="../function/arguement.html">
+            
+                    
+                        <b>1.9.1.</b>
+                    
+                    函數參數
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../function/return_value.html">
+            
+                <a href="../function/return_value.html">
+            
+                    
+                        <b>1.9.2.</b>
+                    
+                    函數返回值
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../function/statement_expression.html">
+            
+                <a href="../function/statement_expression.html">
+            
+                    
+                        <b>1.9.3.</b>
+                    
+                    語句和表達式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../function/higher_order_function.html">
+            
+                <a href="../function/higher_order_function.html">
+            
+                    
+                        <b>1.9.4.</b>
+                    
+                    高階函數
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../match/overview.html">
+            
+                <a href="../match/overview.html">
+            
+                    
+                        <b>1.10.</b>
+                    
+                    模式匹配
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../match/match.html">
+            
+                <a href="../match/match.html">
+            
+                    
+                        <b>1.10.1.</b>
+                    
+                    match關鍵字
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../match/pattern.html">
+            
+                <a href="../match/pattern.html">
+            
+                    
+                        <b>1.10.2.</b>
+                    
+                    模式 pattern
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../trait/overview.html">
+            
+                <a href="../trait/overview.html">
+            
+                    
+                        <b>1.11.</b>
+                    
+                    特徵 Trait
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../trait/trait.html">
+            
+                <a href="../trait/trait.html">
+            
+                    
+                        <b>1.11.1.</b>
+                    
+                    trait關鍵字
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../trait/trait-object.html">
+            
+                <a href="../trait/trait-object.html">
+            
+                    
+                        <b>1.11.2.</b>
+                    
+                    trait對象
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../generic/generic.html">
+            
+                <a href="../generic/generic.html">
+            
+                    
+                        <b>1.12.</b>
+                    
+                    泛型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../ownership-system/preface.html">
+            
+                <a href="../ownership-system/preface.html">
+            
+                    
+                        <b>1.13.</b>
+                    
+                    可變性、所有權、租借和生命期
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="../ownership-system/ownership.html">
+            
+                <a href="../ownership-system/ownership.html">
+            
+                    
+                        <b>1.13.1.</b>
+                    
+                    所有權
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="../ownership-system/borrowing_reference.html">
+            
+                <a href="../ownership-system/borrowing_reference.html">
+            
+                    
+                        <b>1.13.2.</b>
+                    
+                    引用和借用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.3" data-path="../ownership-system/lifetime.html">
+            
+                <a href="../ownership-system/lifetime.html">
+            
+                    
+                        <b>1.13.3.</b>
+                    
+                    生命週期
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../closure/overview.html">
+            
+                <a href="../closure/overview.html">
+            
+                    
+                        <b>1.14.</b>
+                    
+                    閉包
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1" data-path="../closure/syntax.html">
+            
+                <a href="../closure/syntax.html">
+            
+                    
+                        <b>1.14.1.</b>
+                    
+                    閉包的語法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.2" data-path="../closure/implementation.html">
+            
+                <a href="../closure/implementation.html">
+            
+                    
+                        <b>1.14.2.</b>
+                    
+                    閉包的實現
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.3" data-path="../closure/as_argument_return_value.html">
+            
+                <a href="../closure/as_argument_return_value.html">
+            
+                    
+                        <b>1.14.3.</b>
+                    
+                    閉包作為參數和返回值
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../collections/overview.html">
+            
+                <a href="../collections/overview.html">
+            
+                    
+                        <b>1.15.</b>
+                    
+                    集合類型 Collections
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.15.1" data-path="../collections/vec.html">
+            
+                <a href="../collections/vec.html">
+            
+                    
+                        <b>1.15.1.</b>
+                    
+                    動態數組 Vec
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.2" data-path="../collections/hashmap.html">
+            
+                <a href="../collections/hashmap.html">
+            
+                    
+                        <b>1.15.2.</b>
+                    
+                    哈希表 HashMap
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../iterator/overview.html">
+            
+                <a href="../iterator/overview.html">
+            
+                    
+                        <b>1.16.</b>
+                    
+                    迭代器
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.16.1" data-path="../iterator/iterator.html">
+            
+                <a href="../iterator/iterator.html">
+            
+                    
+                        <b>1.16.1.</b>
+                    
+                    迭代器、適配器、消費者
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../module/preface.html">
+            
+                <a href="../module/preface.html">
+            
+                    
+                        <b>1.17.</b>
+                    
+                    模塊和包系統、Prelude
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.17.1" data-path="../module/module.html">
+            
+                <a href="../module/module.html">
+            
+                    
+                        <b>1.17.1.</b>
+                    
+                    模塊 module 和包 crate
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.2" data-path="../module/prelude.html">
+            
+                <a href="../module/prelude.html">
+            
+                    
+                        <b>1.17.2.</b>
+                    
+                    Prelude
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.3" data-path="../module/pub-restricted.html">
+            
+                <a href="../module/pub-restricted.html">
+            
+                    
+                        <b>1.17.3.</b>
+                    
+                    pub restricted
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../error-handling/option-result.html">
+            
+                <a href="../error-handling/option-result.html">
+            
+                    
+                        <b>1.18.</b>
+                    
+                    Option、Result與錯誤處理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../io/preface.html">
+            
+                <a href="../io/preface.html">
+            
+                    
+                        <b>1.19.</b>
+                    
+                    輸入與輸出
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.19.1" data-path="../io/io.html">
+            
+                <a href="../io/io.html">
+            
+                    
+                        <b>1.19.1.</b>
+                    
+                    標準輸入輸出
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.2" data-path="../io/output.html">
+            
+                <a href="../io/output.html">
+            
+                    
+                        <b>1.19.2.</b>
+                    
+                    print! 宏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.3" data-path="../io/file-io.html">
+            
+                <a href="../io/file-io.html">
+            
+                    
+                        <b>1.19.3.</b>
+                    
+                    文件輸入輸出
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../macro/macro.html">
+            
+                <a href="../macro/macro.html">
+            
+                    
+                        <b>1.20.</b>
+                    
+                    宏系統
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../heap-stack/heap-stack.html">
+            
+                <a href="../heap-stack/heap-stack.html">
+            
+                    
+                        <b>1.21.</b>
+                    
+                    堆、棧與Box
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../rcarc/preface.html">
+            
+                <a href="../rcarc/preface.html">
+            
+                    
+                        <b>1.22.</b>
+                    
+                    幾種智能指針
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.22.1" data-path="../rcarc/rcarc.html">
+            
+                <a href="../rcarc/rcarc.html">
+            
+                    
+                        <b>1.22.1.</b>
+                    
+                    Rc, Arc
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22.2" data-path="../rcarc/mutex.html">
+            
+                <a href="../rcarc/mutex.html">
+            
+                    
+                        <b>1.22.2.</b>
+                    
+                    Mutex, RwLock
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22.3" data-path="../rcarc/cell.html">
+            
+                <a href="../rcarc/cell.html">
+            
+                    
+                        <b>1.22.3.</b>
+                    
+                    Cell, RefCell
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../intoborrow/preface.html">
+            
+                <a href="../intoborrow/preface.html">
+            
+                    
+                        <b>1.23.</b>
+                    
+                    類型系統中的幾個常見 Trait
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.23.1" data-path="../intoborrow/into.html">
+            
+                <a href="../intoborrow/into.html">
+            
+                    
+                        <b>1.23.1.</b>
+                    
+                    Into/From 及其在 String 和 &str 互轉上的應用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23.2" data-path="../intoborrow/asref.html">
+            
+                <a href="../intoborrow/asref.html">
+            
+                    
+                        <b>1.23.2.</b>
+                    
+                    AsRef, AsMut
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23.3" data-path="../intoborrow/borrow.html">
+            
+                <a href="../intoborrow/borrow.html">
+            
+                    
+                        <b>1.23.3.</b>
+                    
+                    Borrow, BorrowMut, ToOwned
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23.4" data-path="../intoborrow/deref.html">
+            
+                <a href="../intoborrow/deref.html">
+            
+                    
+                        <b>1.23.4.</b>
+                    
+                    Deref 與 Deref coercions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23.5" data-path="../intoborrow/cow.html">
+            
+                <a href="../intoborrow/cow.html">
+            
+                    
+                        <b>1.23.5.</b>
+                    
+                    Cow 及其在 String 和 &str 上的應用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="../marker/sendsync.html">
+            
+                <a href="../marker/sendsync.html">
+            
+                    
+                        <b>1.24.</b>
+                    
+                    Send 和 Sync
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="../concurrency-parallel-thread/preface.html">
+            
+                <a href="../concurrency-parallel-thread/preface.html">
+            
+                    
+                        <b>1.25.</b>
+                    
+                    併發，並行，多線程編程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.25.1" data-path="../concurrency-parallel-thread/thread.html">
+            
+                <a href="../concurrency-parallel-thread/thread.html">
+            
+                    
+                        <b>1.25.1.</b>
+                    
+                    線程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.2" data-path="../concurrency-parallel-thread/message-passing.html">
+            
+                <a href="../concurrency-parallel-thread/message-passing.html">
+            
+                    
+                        <b>1.25.2.</b>
+                    
+                    消息傳遞
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.3" data-path="../concurrency-parallel-thread/share-memory.html">
+            
+                <a href="../concurrency-parallel-thread/share-memory.html">
+            
+                    
+                        <b>1.25.3.</b>
+                    
+                    共享內存
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.4" data-path="../concurrency-parallel-thread/synchronize.html">
+            
+                <a href="../concurrency-parallel-thread/synchronize.html">
+            
+                    
+                        <b>1.25.4.</b>
+                    
+                    同步
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.5" data-path="../concurrency-parallel-thread/parallel.html">
+            
+                <a href="../concurrency-parallel-thread/parallel.html">
+            
+                    
+                        <b>1.25.5.</b>
+                    
+                    並行
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.26" data-path="../unsafe-rawpointer/preface.html">
+            
+                <a href="../unsafe-rawpointer/preface.html">
+            
+                    
+                        <b>1.26.</b>
+                    
+                    Unsafe、原始指針
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.26.1" data-path="../unsafe-rawpointer/unsafe.html">
+            
+                <a href="../unsafe-rawpointer/unsafe.html">
+            
+                    
+                        <b>1.26.1.</b>
+                    
+                    Unsafe
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.26.2" data-path="../unsafe-rawpointer/raw-pointer.html">
+            
+                <a href="../unsafe-rawpointer/raw-pointer.html">
+            
+                    
+                        <b>1.26.2.</b>
+                    
+                    原始指針
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.27" data-path="../ffi/preface.html">
+            
+                <a href="../ffi/preface.html">
+            
+                    
+                        <b>1.27.</b>
+                    
+                    FFI
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.27.1" data-path="../ffi/calling-ffi-function.html">
+            
+                <a href="../ffi/calling-ffi-function.html">
+            
+                    
+                        <b>1.27.1.</b>
+                    
+                    rust調用ffi函數
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.27.2" data-path="../ffi/compiling-rust-to-lib.html">
+            
+                <a href="../ffi/compiling-rust-to-lib.html">
+            
+                    
+                        <b>1.27.2.</b>
+                    
+                    將rust編譯成庫
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.28" data-path="../operator-overloading/operator.html">
+            
+                <a href="../operator-overloading/operator.html">
+            
+                    
+                        <b>1.28.</b>
+                    
+                    運算符重載
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.29" data-path="../attr-and-compiler-arg/preface.html">
+            
+                <a href="../attr-and-compiler-arg/preface.html">
+            
+                    
+                        <b>1.29.</b>
+                    
+                    屬性和編譯器參數
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.29.1" data-path="../attr-and-compiler-arg/attribute.html">
+            
+                <a href="../attr-and-compiler-arg/attribute.html">
+            
+                    
+                        <b>1.29.1.</b>
+                    
+                    屬性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.29.2" data-path="../attr-and-compiler-arg/rustc-option.html">
+            
+                <a href="../attr-and-compiler-arg/rustc-option.html">
+            
+                    
+                        <b>1.29.2.</b>
+                    
+                    編譯器參數
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.30" data-path="../cargo-detailed-cfg/cargo-detailed-cfg.html">
+            
+                <a href="../cargo-detailed-cfg/cargo-detailed-cfg.html">
+            
+                    
+                        <b>1.30.</b>
+                    
+                    Cargo參數配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.31" data-path="../testing/preface.html">
+            
+                <a href="../testing/preface.html">
+            
+                    
+                        <b>1.31.</b>
+                    
+                    測試與評測
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.31.1" data-path="../testing/threearchtest.html">
+            
+                <a href="../testing/threearchtest.html">
+            
+                    
+                        <b>1.31.1.</b>
+                    
+                    測試 (testing)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.31.2" data-path="../testing/bench.html">
+            
+                <a href="../testing/bench.html">
+            
+                    
+                        <b>1.31.2.</b>
+                    
+                    評測 (benchmark)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.32" data-path="../coding-style/style.html">
+            
+                <a href="../coding-style/style.html">
+            
+                    
+                        <b>1.32.</b>
+                    
+                    代碼風格
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.33" data-path="../any/any.html">
+            
+                <a href="../any/any.html">
+            
+                    
+                        <b>1.33.</b>
+                    
+                    Any與反射
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.34" data-path="../safe/safety.html">
+            
+                <a href="../safe/safety.html">
+            
+                    
+                        <b>1.34.</b>
+                    
+                    安全
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.35" data-path="../data-structure/preface.html">
+            
+                <a href="../data-structure/preface.html">
+            
+                    
+                        <b>1.35.</b>
+                    
+                    常用數據結構實現
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.35.1" data-path="../data-structure/stack.html">
+            
+                <a href="../data-structure/stack.html">
+            
+                    
+                        <b>1.35.1.</b>
+                    
+                    棧結構
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.35.2" data-path="../data-structure/queue.html">
+            
+                <a href="../data-structure/queue.html">
+            
+                    
+                        <b>1.35.2.</b>
+                    
+                    隊列
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.35.3" data-path="../data-structure/binary_tree.html">
+            
+                <a href="../data-structure/binary_tree.html">
+            
+                    
+                        <b>1.35.3.</b>
+                    
+                    二叉樹
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.35.4" data-path="../data-structure/priority_queue.html">
+            
+                <a href="../data-structure/priority_queue.html">
+            
+                    
+                        <b>1.35.4.</b>
+                    
+                    優先隊列
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.35.5" data-path="../data-structure/linked_list.html">
+            
+                <a href="../data-structure/linked_list.html">
+            
+                    
+                        <b>1.35.5.</b>
+                    
+                    鏈表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.35.6" data-path="../data-structure/graph.html">
+            
+                <a href="../data-structure/graph.html">
+            
+                    
+                        <b>1.35.6.</b>
+                    
+                    圖結構
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.36" data-path="overview.html">
+            
+                <a href="overview.html">
+            
+                    
+                        <b>1.36.</b>
+                    
+                    標準庫介紹
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.36.1" data-path="process.html">
+            
+                <a href="process.html">
+            
+                    
+                        <b>1.36.1.</b>
+                    
+                    系統命令:調用grep
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.36.2" data-path="fs-and-path.html">
+            
+                <a href="fs-and-path.html">
+            
+                    
+                        <b>1.36.2.</b>
+                    
+                    目錄操作:簡單grep
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.36.3" data-path="net.html">
+            
+                <a href="net.html">
+            
+                    
+                        <b>1.36.3.</b>
+                    
+                    網絡模塊:W迴音
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.37" data-path="../action/preface.html">
+            
+                <a href="../action/preface.html">
+            
+                    
+                        <b>1.37.</b>
+                    
+                    實戰篇
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.37.1" data-path="../action/json_data/readme.html">
+            
+                <a href="../action/json_data/readme.html">
+            
+                    
+                        <b>1.37.1.</b>
+                    
+                    實戰：Json處理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.37.2" data-path="../action/mysite/readme.html">
+            
+                <a href="../action/mysite/readme.html">
+            
+                    
+                        <b>1.37.2.</b>
+                    
+                    實戰：Web 應用開發入門
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.37.3" data-path="../action/db/readme.html">
+            
+                <a href="../action/db/readme.html">
+            
+                    
+                        <b>1.37.3.</b>
+                    
+                    實戰：使用Postgresql數據庫
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.38" data-path="../appendix/glossary.html">
+            
+                <a href="../appendix/glossary.html">
+            
+                    
+                        <b>1.38.</b>
+                    
+                    附錄-術語表
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >網絡模塊:W迴音</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x7DB2;&#x7D61;&#x6A21;&#x584A;w&#x8C93;&#x7684;&#x8FF4;&#x97F3;">&#x7DB2;&#x7D61;&#x6A21;&#x584A;:W&#x8C93;&#x7684;&#x8FF4;&#x97F3;</h1>
+<p>&#x672C;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;W&#x8C93;&#x5C07;&#x5E36;&#x5927;&#x5BB6;&#x5BEB;&#x4E00;&#x500B;&#x5927;&#x5BB6;&#x90FD;&#x5BEB;&#x904E;&#x4F46;&#x662F;&#x6C92;&#x4EC0;&#x9EBC;&#x4EBA;&#x7528;&#x904E;&#x7684;TCP ECHO&#x8EDF;&#x4EF6;&#xFF0C;&#x4F5C;&#x70BA;&#x672C;&#x7AE0;&#x7684;&#x7D50;&#x5C3E;&#x3002;&#x672C;&#x7A0B;&#x5E8F;&#x50C5;&#x4F5C;&#x70BA;&#x5BE6;&#x4F8B;&#x7A0B;&#x5E8F;&#xFF0C;&#x6211;&#x500B;&#x4EBA;&#x4F30;&#x8A08;&#x4E5F;&#x6C92;&#x6709;&#x4EBA;&#x5728;&#x5BE6;&#x969B;&#x7684;&#x751F;&#x6D3B;&#x4E2D;&#x53BB;&#x4F7F;&#x7528;&#x5979;&#x3002;&#x4E0D;&#x904E;&#xFF0C;&#x4F5C;&#x70BA;&#x6A19;&#x6E96;&#x5EAB;&#x7684;&#x793A;&#x4F8B;&#x4F86;&#x8AAA;&#xFF0C;&#x5DF2;&#x7D93;&#x8DB3;&#x5920;&#x3002;</p>
+<p>&#x9996;&#x5148;&#xFF0C;&#x6211;&#x5011;&#x9700;&#x8981;&#x4E00;&#x500B;&#x4E00;&#x500B;&#x670D;&#x52D9;&#x5668;&#x7AEF;&#x3002;</p>
+<pre><code class="lang-rust"><span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">server</span></span>&lt;A: ToSocketAddrs&gt;(addr: A) -&gt; io::<span class="hljs-built_in">Result</span>&lt;()&gt; {
+    <span class="hljs-comment">// &#x5EFA;&#x7ACB;&#x4E00;&#x500B;&#x76E3;&#x807D;&#x7A0B;&#x5E8F;</span>
+    <span class="hljs-keyword">let</span> listener = <span class="hljs-built_in">try!</span>(TcpListener::bind(&amp;addr)) ;
+    <span class="hljs-comment">// &#x9019;&#x500B;&#x7A0B;&#x5E8F;&#x4E00;&#x6B21;&#x53EA;&#x9700;&#x8655;&#x7406;&#x4E00;&#x500B;&#x93C8;&#x63A5;&#x5C31;&#x597D;</span>
+    <span class="hljs-keyword">for</span> stream <span class="hljs-keyword">in</span> listener.incoming() {
+        <span class="hljs-comment">// &#x901A;&#x904E;match&#x518D;&#x6B21;&#x89E3;&#x5305; stream&#x5230;</span>
+        <span class="hljs-keyword">match</span> stream {
+            <span class="hljs-comment">// &#x9019;&#x88E1;&#x5339;&#x914D;&#x7684;&#x91CD;&#x9EDE;&#x662F;&#x5982;&#x4F55;&#x5C07;&#x4E00;&#x500B;mut&#x7684;&#x5339;&#x914D;&#x50B3;&#x7D66;&#x4E00;&#x500B;Result</span>
+            <span class="hljs-literal">Ok</span>(<span class="hljs-keyword">mut</span> st) =&gt; {
+                <span class="hljs-comment">// &#x6211;&#x5011;&#x7E3D;&#x662F;&#x8981;&#x6C42;client&#x7AEF;&#x5148;&#x767C;&#x9001;&#x6578;&#x64DA;</span>
+                <span class="hljs-comment">// &#x6E96;&#x5099;&#x4E00;&#x500B;&#x8D85;&#x5927;&#x7684;&#x7DE9;&#x885D;&#x5340;</span>
+                <span class="hljs-comment">// &#x7576;&#x7136;&#x4E86;&#xFF0C;&#x5728;&#x5BE6;&#x969B;&#x7684;&#x751F;&#x6D3B;&#x4E2D;&#x6211;&#x5011;&#x4E00;&#x822C;&#x6703;&#x63A1;&#x7528;&#x74B0;&#x5F62;&#x7DE9;&#x885D;&#x4F86;&#x91CD;&#x8907;&#x5229;&#x7528;&#x5167;&#x5B58;&#x3002;</span>
+                <span class="hljs-comment">// &#x9019;&#x88E1;&#x50C5;&#x4F5C;&#x6F14;&#x793A;&#xFF0C;&#x662F;&#x4E00;&#x7A2E;&#x5F88;&#x4F4E;&#x6548;&#x7684;&#x505A;&#x6CD5;</span>
+                <span class="hljs-keyword">let</span> <span class="hljs-keyword">mut</span> buf: <span class="hljs-built_in">Vec</span>&lt;<span class="hljs-keyword">u8</span>&gt; = <span class="hljs-built_in">vec!</span>[<span class="hljs-number">0u8</span>; <span class="hljs-number">1024</span>];
+                <span class="hljs-comment">// &#x901A;&#x904E;try!&#x65B9;&#x6CD5;&#x4F86;&#x89E3;&#x5305;</span>
+                <span class="hljs-comment">// try!&#x65B9;&#x6CD5;&#x7684;&#x91CD;&#x9EDE;&#x662F;&#x9700;&#x8981;&#x6709;&#x7279;&#x5B9A;&#x7684;Error&#x985E;&#x578B;&#x8207;&#x4E4B;&#x914D;&#x5408;</span>
+                <span class="hljs-keyword">let</span> rcount = <span class="hljs-built_in">try!</span>(st.read(&amp;<span class="hljs-keyword">mut</span> buf));
+                <span class="hljs-comment">// &#x53EA;&#x8F38;&#x51FA;&#x7DE9;&#x885D;&#x5340;&#x88E1;&#x8B80;&#x53D6;&#x5230;&#x7684;&#x5167;&#x5BB9;</span>
+                <span class="hljs-built_in">println!</span>(<span class="hljs-string">&quot;{:?}&quot;</span>, &amp;buf[<span class="hljs-number">0</span>..rcount]);
+                <span class="hljs-comment">// &#x56DE;&#x5BEB;&#x5167;&#x5BB9;</span>
+                <span class="hljs-keyword">let</span> wcount = <span class="hljs-built_in">try!</span>(st.write(&amp;buf[<span class="hljs-number">0</span>..rcount]));
+                <span class="hljs-comment">// &#x4EE5;&#x4E0B;&#x4EE3;&#x78BC;&#x5BE6;&#x969B;&#x4E0A;&#x7B97;&#x662F;&#x908F;&#x8F2F;&#x8655;&#x7406;</span>
+                <span class="hljs-comment">// &#x4E26;&#x975E;&#x6A19;&#x6E96;&#x5EAB;&#x7684;&#x4E00;&#x90E8;&#x5206;&#x4E86;</span>
+                <span class="hljs-keyword">if</span> rcount != wcount {
+                    <span class="hljs-built_in">panic!</span>(<span class="hljs-string">&quot;Not Fully Echo!, r={}, w={}&quot;</span>, rcount, wcount);
+                }
+                <span class="hljs-comment">// &#x6E05;&#x9664;&#x6389;&#x5DF2;&#x7D93;&#x8B80;&#x5230;&#x7684;&#x5167;&#x5BB9;</span>
+                buf.clear();
+            }
+            <span class="hljs-literal">Err</span>(e) =&gt; {
+                <span class="hljs-built_in">panic!</span>(<span class="hljs-string">&quot;{}&quot;</span>, e);
+            }
+        }
+    }
+    <span class="hljs-comment">// &#x95DC;&#x9589;&#x6389;Serve&#x7AEF;&#x7684;&#x93C8;&#x63A5;</span>
+    <span class="hljs-built_in">drop</span>(listener);
+    <span class="hljs-literal">Ok</span>(())
+}
+</code></pre>
+<p>&#x7136;&#x5F8C;&#xFF0C;&#x6211;&#x5011;&#x6E96;&#x5099;&#x4E00;&#x500B;&#x6A21;&#x64EC;TCP&#x77ED;&#x93C8;&#x63A5;&#x7684;&#x5BA2;&#x6236;&#x7AEF;&#xFF1A;</p>
+<pre><code class="lang-rust"><span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">client</span></span>&lt;A: ToSocketAddrs&gt;(addr: A) -&gt; io::<span class="hljs-built_in">Result</span>&lt;()&gt; {
+
+    <span class="hljs-keyword">let</span> <span class="hljs-keyword">mut</span> buf = <span class="hljs-built_in">vec!</span>[<span class="hljs-number">0u8</span>;<span class="hljs-number">1024</span>];
+    <span class="hljs-keyword">loop</span> {
+        <span class="hljs-comment">// &#x5C0D;&#x6BD4;Listener&#xFF0C;TcpStream&#x5C31;&#x7C21;&#x55AE;&#x5F88;&#x591A;&#x4E86;</span>
+        <span class="hljs-comment">// &#x672C;&#x6B21;&#x6A21;&#x64EC;&#x7684;&#x662F;tcp&#x77ED;&#x93C8;&#x63A5;&#x7684;&#x904E;&#x7A0B;&#xFF0C;&#x53EF;&#x4EE5;&#x770B;&#x4F5C;&#x662F;&#x4E00;&#x500B;&#x5178;&#x578B;&#x7684;HTTP&#x4EA4;&#x4E92;&#x7684;&#x57FA;&#x790E;IO&#x6A21;&#x64EC;</span>
+        <span class="hljs-comment">// &#x7576;&#x7136;&#xFF0C;&#x9019;&#x500B;&#x901A;&#x8A0A;&#x88E1;&#x9762;&#x4E26;&#x6C92;&#x6709;HTTP&#x5354;&#x8B70; XD&#xFF01;</span>
+        <span class="hljs-keyword">let</span> <span class="hljs-keyword">mut</span> stream = TcpStream::connect(&amp;addr).unwrap();
+        <span class="hljs-keyword">let</span> msg = <span class="hljs-string">&quot;WaySLOG comming!&quot;</span>.as_bytes();
+        <span class="hljs-comment">// &#x907F;&#x514D;&#x767C;&#x9001;&#x6578;&#x64DA;&#x592A;&#x5FEB;&#x800C;&#x5237;&#x5C4F;</span>
+        thread::sleep_ms(<span class="hljs-number">100</span>);
+        <span class="hljs-keyword">let</span> rcount = <span class="hljs-built_in">try!</span>(stream.write(&amp;msg));
+        <span class="hljs-keyword">let</span> _ = <span class="hljs-built_in">try!</span>(stream.read(&amp;<span class="hljs-keyword">mut</span> buf));
+        <span class="hljs-built_in">println!</span>(<span class="hljs-string">&quot;{:?}&quot;</span>, &amp;buf[<span class="hljs-number">0</span>..rcount]);
+        buf.clear();
+    }
+    <span class="hljs-literal">Ok</span>(())
+}
+</code></pre>
+<p>&#x5C07;&#x6211;&#x5011;&#x7684;&#x7A0B;&#x5E8F;&#x62FC;&#x63A5;&#x8D77;&#x4F86;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-rust"><span class="hljs-keyword">use</span> std::net::*;
+<span class="hljs-keyword">use</span> std::io;
+<span class="hljs-keyword">use</span> std::io::{Read, Write};
+<span class="hljs-keyword">use</span> std::env;
+<span class="hljs-keyword">use</span> std::thread;
+
+<span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">server</span></span>&lt;A: ToSocketAddrs&gt;(addr: A) -&gt; io::<span class="hljs-built_in">Result</span>&lt;()&gt; { .. }
+
+
+<span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">client</span></span>&lt;A: ToSocketAddrs&gt;(addr: A) -&gt; io::<span class="hljs-built_in">Result</span>&lt;()&gt; { .. }
+
+
+<span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">main</span></span>() {
+    <span class="hljs-keyword">let</span> <span class="hljs-keyword">mut</span> args = env::args();
+    args.next();
+    <span class="hljs-keyword">let</span> action = args.next().unwrap();
+    <span class="hljs-keyword">if</span> action == <span class="hljs-string">&quot;s&quot;</span> {
+        server(&amp;args.next().unwrap()).unwrap();
+    } <span class="hljs-keyword">else</span> {
+        client(&amp;args.next().unwrap()).unwrap();
+    }
+}
+</code></pre>
+<p>&#x5404;&#x4F4D;&#x53EF;&#x4EE5;&#x81EA;&#x5DF1;&#x8A66;&#x4E00;&#x4E0B;&#x7D50;&#x679C;</p>
+<p>&#x5BEB;&#x7DB2;&#x7D61;&#x7A0B;&#x5E8F;&#xFF0C;&#x8A3B;&#x5B9A;&#x4E86;&#x8981;&#x8655;&#x7406;&#x5404;&#x7A2E;&#x795E;&#x5947;&#x7684;&#x689D;&#x4EF6;&#x548C;&#x932F;&#x8AA4;&#xFF0C;&#x5B9A;&#x7FA9;&#x81EA;&#x5DF1;&#x7684;&#x6578;&#x64DA;&#x7D50;&#x69CB;&#xFF0C;&#x7C98;&#x5305;&#x554F;&#x984C;&#x7B49;&#x90FD;&#x662F;&#x9700;&#x8981;&#x6211;&#x5011;&#x53BB;&#x8655;&#x7406;&#x548C;&#x95DC;&#x6CE8;&#x7684;&#x3002;&#x76F8;&#x8F03;&#x800C;&#x8A00;&#xFF0C;Rust&#x672C;&#x8EAB;&#x5728;&#x7DB2;&#x7D61;&#x65B9;&#x9762;&#x7684;&#x57FA;&#x790E;&#x8A2D;&#x65BD;&#x5EFA;&#x8A2D;&#x4E26;&#x4E0D;&#x76E1;&#x5982;&#x4EBA;&#x610F;&#xFF0C;&#x751A;&#x81F3;&#x9023;&#x7DB2;&#x7D61;I/O&#x90FD;&#x53EA;&#x63D0;&#x4F9B;&#x77AD;&#x5982;&#x4E0A;&#x7684;block I/O &#x3002;&#x53EF;&#x80FD;&#x5176;&#x5718;&#x968A;&#x66F4;&#x95DC;&#x6CE8;&#x65BC;&#x8A9E;&#x8A00;&#x57FA;&#x790E;&#x8A9E;&#x6CD5;&#x7279;&#x6027;&#x548C;&#x7DE8;&#x8B6F;&#x7684;&#x6539;&#x9032;&#xFF0C;&#x4F46;&#x5176;&#x5BE6;&#xFF0C;&#x6709;&#x8457;&#x5B98;&#x65B9;&#x51FA;&#x54C1;&#x7684;&#x9019;&#x7A2E;&#x7DB2;&#x7D61;&#x5EAB;&#x662F;&#x975E;&#x5E38;&#x91CD;&#x8981;&#x7684;&#x3002;&#x540C;&#x6642;&#xFF0C;&#x6211;&#x4E5F;&#x5E0C;&#x671B;Rust&#x80FD;&#x5920;&#x6E67;&#x73FE;&#x51FA;&#x66F4;&#x591A;&#x7684;&#x7DB2;&#x7D61;&#x5EAB;&#x65B9;&#x6848;&#xFF0C;&#x8B93;Rust&#x7684;&#x660E;&#x5929;&#x66F4;&#x597D;&#x66F4;&#x5149;&#x660E;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="fs-and-path.html" class="navigation navigation-prev " aria-label="Previous page: 目錄操作:簡單grep">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../action/preface.html" class="navigation navigation-next " aria-label="Next page: 實戰篇">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"網絡模塊:W迴音","level":"1.36.3","depth":2,"next":{"title":"實戰篇","level":"1.37","depth":1,"path":"action/preface.md","ref":"action/preface.md","articles":[{"title":"實戰：Json處理","level":"1.37.1","depth":2,"path":"action/json_data/readme.md","ref":"action/json_data/readme.md","articles":[]},{"title":"實戰：Web 應用開發入門","level":"1.37.2","depth":2,"path":"action/mysite/readme.md","ref":"action/mysite/readme.md","articles":[]},{"title":"實戰：使用Postgresql數據庫","level":"1.37.3","depth":2,"path":"action/db/readme.md","ref":"action/db/readme.md","articles":[]}]},"previous":{"title":"目錄操作:簡單grep","level":"1.36.2","depth":2,"path":"std/fs-and-path.md","ref":"std/fs-and-path.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}},"theme":"default","lang":"zh-cn","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"std/net.md","mtime":"2021-06-12T21:35:05.320Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-06-12T21:37:46.784Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
